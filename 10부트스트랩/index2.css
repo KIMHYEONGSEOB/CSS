@@ -1,0 +1,168 @@
+/* 헤더 디자인 */
+
+/* 디자인을 커스터마이징 할때 */
+/* 1. 동일클래스명을 선언하고, 속성을 지정 */
+
+ul, li{
+    list-style: none;
+}
+.form-control{
+    border-radius: 0;
+}
+.form-control:focus{
+    border-color: gray ;
+    box-shadow:none;
+}
+.btn{
+    border-radius: 0;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+
+
+.navbar-inverse{
+    background-color: gray;
+    border: aqua;
+}
+
+.navbar-brand{
+    padding: 10px 20px;
+}
+.navbar{
+    border-radius: 0 ;
+    margin-bottom: 0;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbacr-inverse .navbar-nav > li > a:fous {background-color: gray;}
+
+/* 슬라이드 영역 */
+
+.main-article{
+    margin-top: 50px;
+}
+
+.carousel-control.right{background-image: none;}
+.carousel-control.left{background-image: none;}
+
+.main-section{
+    margin-top: 50px;
+}
+.prod-list{
+    border: 1px solid gray;
+    padding: 5px;
+}
+/* col- 이 클래스 속성에 포함되어있는 li태그를 의미*/
+.prod-list > li[class*=col-]{
+    padding: 1px solid black;
+    display: block;
+
+}
+.prod-link{
+    border: 1px black;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+.prod-list .prod-link> .arrow{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: gainsboro;
+    color: white;
+    padding: 10px 20px;
+}
+.prod-list .prod-link>.hover{
+    background-color: blue;
+    /* 투명도 0이 안보임 1이 기본 */
+    opacity: 0;
+}
+.prod-link:hover>.hover{
+    opacity: 1;
+}
+.prod-link:hover{
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+.col-sm-3{
+    box-sizing: border-box;
+}
+
+
+/* 상품리스트 */
+.prod-content{
+    padding: 10px 0;
+    overflow: hidden;
+}
+.prod-list-inner>img{
+    width: 100%;
+}
+.info{
+    float: left;
+}
+.price{
+    float: right;
+}
+.prod-color{
+    opacity: 0;
+    margin-top: px;
+    transition: all 0.3s ease-in-out;
+}
+.prod-color>ul{
+    overflow: hidden;
+}
+.prod-color>ul>li{
+    float: left;
+
+    width: 30px;
+}
+.prod-list-inner:hover>.prod-color{
+    opacity:1;
+}
+.bottom-right{
+    margin-bottom:50px ;
+    min-height:350px
+}
+.bottom-price{
+    overflow: hidden;
+}
+.bottom-price>h4{
+    float: left;
+    margin-top: 5px;
+}
+.bottom-price>h2{
+    float: right;
+    margin: 0;
+}
+
+.order{
+    overflow: hidden;
+}
+.order>button{
+    float: left;
+    width: 50%;
+    padding: 15px 0;
+    border: 1px  solid gainsboro;
+    font-size: 20px;
+}
+
+.sale{
+    background-color: rgb(171, 171, 231);
+}
+.asas{
+    border-bottom: 1px solid black;
+    margin-bottom: 40px ;
+}
+.order>.shopping-cart:hover{
+    background-color: rgb(205, 205, 205);
+}
+.order>.sale:hover{
+    background-color: rgb(156, 154, 255);
+}
+

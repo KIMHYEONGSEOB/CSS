@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(images/bg.png);
+            width: 100%;
+        }
+
+        header {
+
+        }
+        .wrap{
+            
+        }
+        .apple {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .apple>img{
+            position: relative;
+        }
+        .search {
+            border: 0px solid black;
+            font-size: 16px;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+            position: absolute;
+        }
+        
+
+        .aside {
+            position: fixed;
+            bottom: 40px;
+            right: 50px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .top {
+            width: 40px;
+            height: 40px;
+            display: block;
+            background-position: -490px -657px;
+            background-image: url(images/sp_main.d5b6c236.png);
+            background-size: 800px;
+            border-radius: 50%;
+            border: 1px solid rgb(232, 232, 232);
+        }
+
+        .aside:hover {
+            background-color: rgb(218, 217, 217);
+
+            .top {
+                border: none;
+            }
+        }
+
+        section {
+            height: 2000px;
+        }
+
+        .menu {
+            text-align: center;
+            overflow: hidden;
+            width: 400px;
+            margin: 0 auto;
+
+        }
+
+        li {
+            display: inline-block;
+            width: 20%;
+            float: left;
+        }
+
+        li>a {
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 44px;
+            height: 44px;
+            background-image: url(images/sp_main.d5b6c236.png);
+            background-size: 900px;
+            background-position: -470.5px -695px;
+            border-radius: 40%;
+        }
+
+        .icon2 {
+            display: inline-block;
+            width: 44px;
+            height: 44px;
+            background-image: url(images/sp_main.d5b6c236.png);
+            background-size: 900px;
+            background-position: -263px -695px;
+            border-radius: 40%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="aside">
+        <a href="#" class="top"></a>
+    </div>
+    <header>
+        <div class="wrap">
+            <div class="apple">
+                <span>
+                <img src="images/logo.jpg" alt="">
+                </span>
+            </div>
+
+        </div>
+        <ul class="menu">
+            <li><a href="">
+                    <div class="icon"></div>
+                    <div class="service">메일</div>
+                </a></li>
+            <li><a href=""><span class="icon2"></span>
+                    <p>블로그</p>
+                </a></li>
+            <li><a href=""><span class="icon"></span>
+                    <div>웹툰</div>
+                </a></li>
+            <li><a href=""><span class="icon"></span></a></li>
+            <li><a href=""><span class="icon"></span></a></li>
+        </ul>
+    </header>
+    <section></section>
+</body>
+
+</html>

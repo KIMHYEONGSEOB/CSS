@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        body {
+            background-image: url(images/bg.png);
+        }
+        .floating{
+            position: fixed;
+            top: 50px;
+            right: 50px;
+            background-color: red;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            z-index: 10000000;
+        }
+        .logo {
+            text-align: center;
+            margin: 20px 0px;
+        }
+
+        .menu>ul>li {
+            display: inline-block;
+
+        }
+
+        .menu>ul>li>a {
+            text-decoration: none;
+            color: white;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .menu>ul>li>a:hover {
+            background-color: gray;
+        }
+
+        .menu {
+            text-align: center;
+            background-color: rgba(0, 0, 0, );
+            position: sticky;
+            top: 0;
+            z-index: 200;
+        }
+
+        /* 슬라이드 */
+        .slide {
+            overflow: hidden;
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .slide>li {
+            float: left;
+            width: 25%;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .banner {
+            background-color: white;
+        }
+        /*  서브 메뉴 */
+        .sub_menu{
+            position: sticky;
+            top: 50px;
+            background-color: white;
+            z-index: 112100;
+            text-align: center;
+        }
+        .sub_menu>ul>li{
+            display: inline-block;
+            padding: 10px 20px;
+
+        }
+        .sub_menu>ul>li>a{
+            text-decoration: none;
+            
+            color: black;
+        }
+
+        /* 메인 영역 */
+        article> .left{
+            position: absolute;
+            left:-250px;
+            top: 0;
+        }
+        article> .right{
+            position: absolute;
+            right: -250px;
+            top: 0;
+        }
+        aside>img{
+            display: block;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="">
+        </div>
+
+    </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴1</a></li>
+            </ul>
+        </nav>
+    <aside class="floating">
+        <p>
+            <a href="#">top</a>
+        </p>
+    </aside>
+    <article class="banner">
+        <ul class="slide"><!--overflow-->
+            <li><img src="images/item01.png" alt="">
+                <p>아이템</p>
+            </li>
+            <li><img src="images/item01.png" alt="">
+                <p>아이템</p>
+            </li>
+            <li><img src="images/item01.png" alt="">
+                <p>아이템</p>
+            </li>
+            <li><img src="images/item01.png" alt="">
+                <p>아이템</p>
+            </li>
+        </ul>
+    </article>
+<!-- 
+    sticky는 특정 높이에 도달하기 전까지는 position: static처럼 동작을 하다가,
+    설정된 위치에 다다르면 fixed처럼 동작한다.
+
+    규칙
+    1. 스티키는 top, bottom, left, right 속성중 하나를 반드시 필수 지정 
+    2. top속성에는 fixed되는 지점을 기록함
+    3. 부모속성에 overflow가 있으면 안됨
+    -->
+    <article class="sub_menu">
+        <ul>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+        </ul>
+    </article>
+
+    <article style="position: relative; width: 700px; margin: 0 auto;">
+        <div>
+            <img src="images/ipad.jpg" alt="">
+        </div>
+        <aside class="left">
+            <img src="images/side01.png" alt="">
+            <img src="images/side01.png" alt="">
+        </aside>
+        <aside class="right">
+            <img src="images/side03.png" alt="">
+            <img src="images/side04.png" alt="">
+        </aside>
+        
+    </article>
+</body>
+
+</html>

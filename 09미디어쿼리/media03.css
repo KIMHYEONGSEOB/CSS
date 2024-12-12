@@ -1,0 +1,111 @@
+*{
+    margin: 0;padding: 0;
+}
+ul, li{list-style: none;}
+a{text-decoration: none;}
+img{height: auto; max-width: 100%;}
+
+/* 웹디자인 */
+@media(min-width:767px){
+    #wrap{
+        width: 960px;
+        margin: 0 auto;
+        border: 1px solid gray;
+    }
+    .logo{
+        height: 280px;
+        background: url(images/bg.png);
+    }
+    .gnb{
+        background-color: crimson;
+        text-align: center;
+    }
+    .logo>h1{
+        color: yellow;
+        font-size: 30px;
+        padding: 20px;
+    }
+    .gnb>ul>li{
+        display: inline-block;
+    }
+    .gnb>ul>li>a{
+        display: block;
+        color: white;
+        padding: 20px 30px;
+    }
+    .gnb ul li a:hover{
+        background-color: aqua;
+    }
+
+    .box{
+        overflow: hidden;
+    }
+    .box> .left{
+        float: left;
+        width: 700px;
+        padding: 20px;
+    }
+    .box> .right{
+        float: right;
+        width: 200px;
+        padding: 10px;
+        background-color: gray;
+        height: 500px;
+    }
+
+    footer{
+        background-color: black;
+        text-align: center;
+        color: white;
+        padding: 10px;
+    }
+}
+
+/* 모바일 환경 디자인 */
+@media(max-width:766px) {
+    #wrap{
+        width: 100%;
+        border: 1px solid gray;
+}
+.logo{
+    height: 280px;
+    background: url(images/bg.png);
+}
+.gnb{
+    background-color: crimson;
+    text-align: center;
+}
+.logo>h1{
+    color: yellow;
+    font-size: 30px;
+    padding: 20px;
+}
+.gnb>ul>li>a{
+    display: block;
+    color: white;
+    padding: 5px;
+}
+.gnb>ul>li:hover{
+    background-color: brown;
+}
+.box> .left{
+    padding: 10px;
+}
+.right{
+    overflow: hidden;
+    background-color: gray;
+}
+.right>img{
+    float: left;
+    width: 33.3333%;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+}

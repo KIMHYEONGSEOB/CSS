@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            border: 1px solid black;
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .wrap .box{
+            /*부모상자가 자식을 담지 못하는 현상이 발생하므로, 2가지 문법중에 1가지를 쓰면 된다.*/
+            /*1. 부모태그에 가상선택자 방식
+                    .wrap:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+            */
+            /*2. 부모 태그에 overflow:hidden*/
+            float: left;
+            border: 1px solid black;/*보더 때문에 상자가 다 들어가지 못하고 한줄 아래로 내려감*/
+            width: 16.6666%;
+            box-sizing: border-box;/*그것을 방지하기 위해 쓰는것*/
+        }
+
+        .list{
+            border: 1px solid black;
+            width: 50%;
+            margin: 0 auto;
+            overflow:hidden
+        }
+        .list >li{
+            float: left;
+            width: 50%;            
+        }
+        .content{
+            border: 1px solid black;
+            width: 50%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .left{
+            float: left ;
+        }
+        .right{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+    </div>
+    
+    <hr>
+
+    <ul class="list">
+        <li>상자</li>
+        <li>상자</li>
+        <li>상자</li>
+        <li>상자</li>
+        <li>상자</li>
+        <li>상자</li>
+        <li>상자</li>
+        <li>상자</li>
+    </ul>
+    <hr>
+    <div class="content">
+        <div class="left">왼쪽상자</div>
+        <div class="right">오른쪽상자</div>
+    </div>
+</body>
+</html>

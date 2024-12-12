@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .reply {
+        border: 1px solid black;
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+        padding: 10px;
+    }
+
+    .reply>img {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 80px;
+    }
+
+    .content {
+        padding-left: 100px;
+        overflow: hidden;
+
+    }
+
+    .content>textarea {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 150px;
+        padding: 10px;
+        font-size: large;
+        resize: none;
+    }
+
+    .content>.left {
+        float: left;
+    }
+
+    .left>input {
+        display: inline-block;
+        padding: 5px;
+        margin: 3px;
+    }
+
+    .content>.right {
+        float: right;
+    }
+    button:hover{
+        input{
+
+        }
+    }
+</style>
+
+<body>
+    <div class="reply" style="width: 50%;">
+        <img src="/06레이아웃(float)/bgimg.png" alt="">
+        <div class="content">
+            <textarea></textarea>
+            <div class="left">
+                <div>
+                    <p style="display: inline-block;">ID:</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p style="display: inline-block;">pw:</p>
+                    <input type="password">
+                </div>
+            </div>
+            <div  class="right">
+            <button style="display: block;">등록버튼</button>
+            <input type="reset" style="display: block;">
+        </div>
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>

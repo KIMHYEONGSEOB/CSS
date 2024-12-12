@@ -1,0 +1,111 @@
+*{
+    margin: 0; padding: 0;
+    list-style: none;
+}
+a{
+    color: gray; text-decoration: none;
+}
+/*이미지가 깨지지 않게함*/
+img{height: auto; max-width:100%}
+header{
+    border-top: 4px solid green;
+}
+.wrap{
+    border-bottom: 1px solid gray;
+}
+.top{
+    width: 1080px; margin: 0 auto;
+     overflow: hidden;
+}
+.top_left{
+    float: left;
+    color: gray;
+    padding: 11px 7px;
+    font-size: 13px;
+}
+.top_right{
+    float: right;
+}
+.top_right>ul>li{display: inline; border-left: 1px solid gray;}
+.top_right>ul>li>a{display: inline-block; padding: 11px 7px;}
+.top_right>ul>li>a>span{font-size: 13px;}
+
+.mid{
+    width:1080px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.mid>.left{
+    float: left;
+}
+.mid> .right{
+    float: right;
+    padding-top: 10px;
+}
+.mid>fieldset{
+    margin: 36px 0 0 11px;
+    width: 330px;
+    height: 40px;
+    background: url(img_melon/melon_search.png) no-repeat;
+    border: none;
+    overflow: hidden;
+}
+header .mid>fieldset>input[type=text]{
+    float: left;
+    margin: 7px 0 0 18px;
+    width: 260px;
+    height: 25px;
+    border: none;
+}
+header .mid>fieldset>button{
+    float: right;
+    background: url(img_melon/melon_btn.png) no-repeat;
+    width: 45px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+.bottom{
+    overflow: hidden;
+    width:1080px;
+    margin: 0 auto;
+}
+.main_gnb{
+    float: left;
+}
+.main_gnb>li{display: inline-block;}
+.main_gnb>li>a{display: block;font-size: 15px;padding: 7px 10px; color: black; font-weight:900 ;}
+.sub_gnb>li>a{display: block;font-size: 15px;padding: 7px 10px; color: black; font-weight:900 ;}
+.sub_gnb{
+    float:right;
+}
+.main_gnb>li{display: inline-block;}
+.main_gnb>li>a:hover{
+    color: green;
+}
+
+
+.main{
+    display: inline-block;
+    overflow: hidden;
+}
+.content{
+    width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.new>ul>li{
+    display: inline-block;
+    float: left;
+    width: 33.3333%;
+    padding: 0;
+}
+.new{
+    width: 480px;
+}
+
+.login{
+    height: 100px;
+    border: 1px solid black;
+}

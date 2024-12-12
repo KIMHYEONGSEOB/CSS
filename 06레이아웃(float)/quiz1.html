@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .box {
+            border: 1px solid black;
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+
+        }
+        /* .box>.lobx,
+        .box>.rbox{
+            float: left;
+            width: 50%; */
+        /* } */
+        .lbox {
+            float: left;
+            width: 50%;
+
+        }
+
+        .rbox {
+            float: left;
+            width: 50%;
+            border: 1px solid;
+            box-sizing: border-box;
+        }
+
+        .content {
+            padding-bottom: 50px;
+            border: 1px solid black;
+        }
+
+        .lprice {
+            float: left;
+        }
+
+        .price {
+            overflow: hidden;
+            border: 1px solid black;
+        }
+
+        .rprice {
+            float: right;
+        }
+
+        .btn {
+            overflow: hidden;
+
+
+        }
+
+        .btn>.left {
+            float: left;
+            width: 50%;
+        }
+
+        .btn>.right {
+            float: right;
+            width: 50%;
+        }
+
+        h2 {
+            margin: 20px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        과제2
+    </h2>
+
+    <div class="box">
+        <div class="lbox">
+            사진
+        </div>
+        <div class="rbox">
+            <p class="content">
+                제목: 패딩바텀 50px;
+                <br>
+                내용: ~~~
+            </p>
+            <div class="price">
+                <div class="lprice">
+                    가격
+                </div>
+                <div class="rprice">
+                    10000원
+                </div>
+            </div>
+            <div class="btn">
+                <button class="left">장바구니</button>
+                <button class="right">구매하기</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+* {list-style: none;}
+
+b {color: cyan;}
+
+strong,small,i{color: salmon;}
+
+#고유함{color: black;}
+#고유함{color: yellow;}
+.여러개{color: green;}
+
+.artbox p{color: aqua;}
+.showbox > p{color: peachpuff;}
+
+input[type=date],
+input[type=password]{
+    color: blue;
+}
+
+a[href=이동하기]{color: sandybrown;}

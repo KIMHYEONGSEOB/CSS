@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img{
+            height: auto; max-width: 100%;
+            cursor: pointer;
+        }
+        header {
+            /* width: 0 auto; */
+            margin: 0 auto;
+            background-color: black;
+            text-align: center;
+            /* height: 53px; */
+            ;
+        }
+
+        .gnb>li {
+            display: inline-block;
+        }
+
+        .gnb>li>a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+            box-sizing: border-box; /*border와 패딩을 박스 크기에서 제외*/
+        }
+
+        .gnb>li>a:hover {
+            border-bottom: 3px solid white;
+        }
+        article{
+            text-align: center;
+        }
+        section{width: 1020px; margin: 0 auto; margin-top: 50px;}
+        .content{border: 1px solid black; padding: 30px;}
+        
+    </style>
+</head>
+
+<body>
+    <header><!--가운데로-->
+        <div class="gnb">
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+        </div>
+    </header>
+    <article>
+        <img src="쿠팡.jpg" alt="#">
+    </article>
+
+    <section>
+        <h3>오늘의 발견</h3>
+        <div class="content">
+            내용...<br>
+            내용...<br>
+            내용...<br>
+            내용...<br>
+        </div>
+    </section>
+</body>
+
+</html>
