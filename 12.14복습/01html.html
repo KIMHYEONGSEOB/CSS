@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="overflow: hidden; margin-bottom: 50px;">
+        <span style="float:left">
+            <h1>이 태그는 글씨가 가장 커진다!</h1>
+            <h2>이 태그는 두번째로 글씨씨가 커짐!</h2>
+            <h3>이건 세번째로 커지고</h3>
+            <h4>이건 네번째</h4>
+            <h5>다섯 번째</h5>
+            <h6>가장 작음!</h6>
+        </span>
+        <span style=" float: left;">
+            <p style="font-size: 32px;">이 태그는 글씨가 가장 커진다!</p>
+            <p style="font-size: 24px;">이 태그는 두번째로 글씨씨가 커짐!</p>
+            <p style="font-size: 18.72px;">이건 세번째로 커지고</p>
+            <p style="font-size: 16px;">이건 네번째</p>
+            <p style="font-size: 13.28px;">다섯 번째</p>
+            <p style="font-size: 10.72px;">가장 작음!</p>
+        </span>
+    </div>
+    <div>
+        <p>
+            본문의 글자를 입력하는 태그
+        </p>
+        <p>
+            본문의 글자
+        </p>
+        <br>
+        &lt;br&gt;태그는 줄을 바꿔주는 개행태그다
+        <hr>
+        &lt;hr&gt;태그는 줄을 그어준다.
+        &amp;
+    </div>
+    <hr>
+    <div>
+        <b>글자가 굵어진다!</b>
+        <br>
+        <i>글자가 기울어진다</i>
+        <br>
+        <small>글자가 작아짐</small>
+        <p>이것은 일반 글자!<sub>글자가 아래에 달라붙음</sub><sup>위에 달라 붙음</sup>
+            <br>이런 수식에 자주 쓰임<br>E = mc<sup>2</sup>
+            <br>CO<sub>2</sub>
+        </p>
+
+
+
+        <ins>글자에 밑줄을 그어줌</ins>
+        <br>
+        <del>글자에 줄이 그어짐짐</del>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div style="margin-bottom: 50px;">
+        <a href="https://github.com/KIMHYEONGSEOB">
+            여기에 글을 쓰면 밑줄과 글 색이 변하고, 커서가 바뀐다
+        </a>
+    </div>
+    <div style="margin-bottom: 50px;">
+        <ul>
+            ul태그
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+        </ul>
+        <ol>
+            ol태그
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+        </ol>
+    </div>
+
+    <style>
+        table{border: 1px solid black;}
+        th{border: 1px solid red; padding: 0 10px;}
+        td{border: 1px solid blue}
+    </style>
+<div style="margin-bottom: 50px;">
+    <table>
+        <tr>
+            <th>사원명</th>
+            <th>입사일</th>
+            <th>주민번호</th>
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 1</td>
+            <td>data 1</td>
+        </tr>
+        <tr>
+            <td>data 2</td>
+            <td>data 2</td>
+            <td>data 2</td>
+        </tr>
+        <tr>
+            <td>data 3</td>
+            <td>data 3</td>
+            <td>data 3</td>
+        </tr>
+    </table>
+</div>
+<div style="margin-bottom: 60px;">
+    <img src="/images/item02.png" alt="이것은 아이팟" width="30%" height="400px">
+    <img src="없는 이미지를 넣었다!" alt="이것은 아이팟" width="30%" height="400px">
+</div>
+<style>
+    input{
+        border: 1px solid black;
+    }
+</style>
+<div>
+    <form>
+         <button type="button" name="안녕"><br>
+         <div>
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+         </div>
+         
+         <input type="file"><br>
+         <input type="hidden"><br>
+         <input type="image"><br>
+         <input type="password"><br>
+         <div>
+         <input type="radio">
+         <input type="radio">
+         <input type="radio">
+         </div>
+         <input type="reset"><br>
+         <input type="submit"><br>
+         <input type="text">
+    </form>
+    <form action="/submit" method="post">
+        <label for="text">텍스트 입력:</label>
+        <input type="text" id="text" name="text"><br><br>
+        
+        <label for="password">비밀번호 입력:</label>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <label for="checkbox">체크박스:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" value="yes"><br><br>
+        
+        <label for="radio1">라디오 버튼 1:</label>
+        <input type="radio" id="radio1" name="radio" value="option1">
+        <label for="radio1">옵션 1</label><br>
+        
+        <label for="radio2">라디오 버튼 2:</label>
+        <input type="radio" id="radio2" name="radio" value="option2">
+        <label for="radio2">옵션 2</label><br><br>
+        
+        <label for="file">파일 선택:</label>
+        <input type="file" id="file" name="file"><br><br>
+        
+        <input type="hidden" name="hiddenField" value="hiddenValue">
+        
+        <label for="image">이미지 버튼:</label>
+        <input type="image" src="button.png" alt="이미지 버튼" width="100" height="50"><br><br>
+        
+        <button type="button">일반 버튼</button>
+        <input type="reset" value="초기화">
+        <input type="submit" value="제출">
+    </form>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, li{
+    list-style: none;
+    display: inline-block;
+}
+
+header{
+    border-bottom: 1px solid black;
+}
+.top{
+    background-color: #2c2cad;
+    text-align: center;
+}
+.top>ul{
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 3px 0;
+    color: white;
+}
+.top>ul>li{
+    float: right;
+    font-size: small;
+    font-weight: 800;
+    padding: 5px;
+}
+.top>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.head-menu{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.head-menu>ul>li{
+    display: inline-block;
+    margin: 15px 20px 0 20px;
+}
+.head-menu>ul{
+    overflow: hidden;
+
+}
+.head-menu>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.head-menu>ul>li:nth-child(7){
+    float:right;
+    background-image: url(image/icon_menu.png);
+    width: 25px;
+    height: 25px;
+    margin: 15px 15px;
+
+}
+.head-menu>ul>li:nth-child(8){
+    float: right;
+    background-image: url(image/icon_search_main.png);
+    width: 25px;
+    height: 25px;
+    margin: 15px 15px;
+}
+
+/* 메인 */
+
+section{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.search{
+    display: inline-block;
+}
+.login{
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 20px;
+    float: right;
+    display: inline-block;
+    width:320px;
+    height:392px;
+    text-align: center;
+}
+.login-info{
+    margin-bottom: 20px;
+}
+.login-info>img{
+    margin:70px 0 30px 0;
+}
+.login-btn>button{
+    margin-top: 20px;
+    width: 85%;
+    height: 45px;
+    border: none;
+    background-color: rgb(101, 165, 255);
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.login-search{
+    display: block;
+    padding: 10px;
+}
+.login-search>li{
+    float:left;
+    padding : 10px;
+}
+.login-search>li:nth-child(3){
+    float: right;
+}
+.login-search>li>a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.search{
+    margin-top: 20px;
+    font-weight: 900;
+}
+.search>ul>li{
+    margin-right: 20px;
+}
+.search>ul>li>input{
+    padding:20px 190px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(153, 153, 242);
+    font-size: auto;
+}
+nav{
+    height: 226px;
+    background-color: #f4f8ff;
+    margin: 35px 0;
+}
+
+/* 자주찾는 서비스스 */
